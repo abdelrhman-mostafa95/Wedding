@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* basic attributes */
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.d-block {
+    display: block;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: start;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.gap-50 {
+    gap: 50px;
+}
+
+.contanier {
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+
+/* nav bar */
+
+.navBar a {
+position: relative;
+  text-decoration: none;
+  color: var(--color-brown);
+  transition: color 0.4s ease-in-out;
+}
+
+.navBar a::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: var(--color-light-brown);
+    transition: all 0.5s ease-out;
+    transform: translateX(-50%);
+}
+
+.navBar a:hover {
+  color: var(--color-light-brown);
+}
+
+.navBar a:hover::after {
+  width: 100%; /* grow to full width */
+}
+
+
+.our_logo {
+    font-family: 'Great Vibes';
+    border: 1px solid var(--color-brown);
+    color: var(--color-brown);
+    padding: 22px 10px;
+    border-radius: 100%;
+}
+
+
+
+:root {
+    --color-brown: #2B1105;
+    --color-light-brown: #C6754D;
+}
