@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: var(--color-off-white);
+}
+
 /* basic attributes */
 
 .d-flex {
@@ -26,6 +30,10 @@
     justify-content: space-between;
 }
 
+.justify-around{
+    justify-content: space-around;
+}
+
 .align-center {
     align-items: center;
 }
@@ -46,12 +54,16 @@
     flex-direction: column;
 }
 
-.text-align {
+.text-center {
     text-align: center;
 }
 
 .width-50 {
     width: 50%;
+}
+
+.height-50{
+height: 50%;
 }
 
 .width-100 {
@@ -61,6 +73,10 @@
 .gap-50 {
     gap: 50px;
 }
+.gap-20{
+    gap: 20px;
+}
+
 
 .contanier {
     width: 90%;
@@ -68,11 +84,29 @@
 }
 
 .row {
-    margin-top: 20px;
+    margin: 20px ;
+}
+
+/* animation */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
 /* nav bar */
+
+.navBar{
+    margin-bottom: 20px;
+    
+}
 
 .navBar a {
 position: relative;
@@ -98,7 +132,7 @@ position: relative;
 }
 
 .navBar a:hover::after {
-  width: 100%; /* grow to full width */
+  width: 100%; 
 }
 
 
@@ -110,9 +144,261 @@ position: relative;
     border-radius: 100%;
 }
 
+.our_logo_media{
+    font-family: 'Great Vibes';
+    border: 1px solid var(--color-brown);
+    color: var(--color-brown);
+    padding: 22px 10px;
+    border-radius: 100%;
+}
 
+.shadow_line {
+    border: none;
+    height: 1px;
+    background: var(--color-gray);
+    box-shadow: 0 5px 5px var(--color-light-brown);
+    margin: 20px 0;
+}
+
+.nav_menu_btn {
+    display: none;
+}
+
+/* hero section */
+
+
+
+.header_text{
+    margin: 10px 0;
+}
+
+.header_text span{
+font-family: 'Great Vibes';
+}
+
+.header_text h1{
+    font-family: 'Edu NSW ACT Cursive', cursive;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--color-brown);
+}
+
+.header_text h5{
+    color: var(--color-light-brown);
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.hero_video{
+width: 100%;    
+}
+
+.hero_video video{
+    margin: auto;
+    padding: auto;
+    width: 70%;
+    height: 100%;
+    opacity: 1.5;
+}
+
+/* invetation */
+
+.invetation{
+    border: 1px solid var(--color-light-brown);
+    border-radius: 50px;
+    gap: 50px;
+    margin:50px 70px;
+    
+}
+
+.left img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-bottom: -3.5px;
+}
+
+.right h4{
+color: var(--color-light-brown);
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+
+.right h1{
+    font-family: 'Edu NSW ACT Cursive', cursive;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--color-brown);
+    margin-bottom: 10px;    
+}
+
+/* groom and bride */
+
+.groom_section{
+    margin: 100px;
+}
+
+.groom_img{
+width: 100%;
+}
+
+.groom h1{
+    font-family: 'Edu NSW ACT Cursive', cursive;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 500;
+    color: var(--color-brown);
+    margin-bottom: 10px;
+}
+
+.left_side {
+    border: 2px solid var(--color-light-brown);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.left_side h2{
+    font-family: 'Edu NSW ACT Cursive', cursive;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--color-brown);
+    margin-bottom: 10px;
+}
+
+.left_side p{
+    font-family: 'Poppins', cursive;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 20px;
+    color: var(--color-brown);
+    margin-bottom: 10px;
+}
+
+.left_side img{
+    
+    width: 100%;
+    height: 70vh;
+    border-radius: 46px;
+}
+
+.right_side{
+    border: 2px solid var(--color-light-brown);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.right_side img{
+    
+    width: 100%;
+    height: 70vh;
+    border-radius: 46px;
+}
+
+.right_side h2{
+    font-family: 'Edu NSW ACT Cursive', cursive;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--color-brown);
+    margin-bottom: 10px;
+}
+
+.right_side p{
+    font-family: 'Poppins', cursive;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-brown);
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav_menu_btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .shadow_line {
+        display: none;
+    }
+    .navBar a{
+        display: none;
+    }
+    .our_logo{
+        display: none;
+    }
+    .menu{
+        width: 5%;
+        height: 5%;
+    }
+    .hero{
+        margin-bottom: 100px;
+        text-align: center;
+    }
+      .invetation{
+        display: block;
+        margin: 10px;
+    }
+    .left img{
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+.groom_section{
+    margin: 25px;
+}
+    
+}
+
+@media (max-width: 767px) {
+  .nav_menu_btn {
+        display: flex;
+        justify-content: space-between;
+    }
+    .shadow_line {
+        display: none;
+    }
+    .navBar a{
+        display: none;
+    }
+    .our_logo{
+        display: none;
+    }
+     .menu{
+        width: 5%;
+        height: 5%;
+    }
+    .hero{
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    .invetation{
+        display: block;
+        margin: 10px;
+    }
+    .left img{
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+.groom_section{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+}
 
 :root {
     --color-brown: #2B1105;
     --color-light-brown: #C6754D;
+    --color-off-white: #FFFFF6;
 }
