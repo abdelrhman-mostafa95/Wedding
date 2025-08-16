@@ -334,6 +334,11 @@ width: 100%;
     .our_logo{
         display: none;
     }
+     #video_speed{
+width: 100%;  
+height: 100%;
+}
+   
     .menu{
         width: 5%;
         height: 5%;
@@ -355,13 +360,29 @@ width: 100%;
 .groom_section{
     margin: 25px;
 }
+.right_side img{
+    
+    width: 100%;
+    height: 40vh;
+    border-radius: 46px;
+
     
 }
+
+.left_side img{
+    
+    width: 100%;
+    height: 40vh;
+    border-radius: 46px;
+}
+}
+
 
 @media (max-width: 767px) {
   .nav_menu_btn {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     .shadow_line {
         display: none;
@@ -372,6 +393,10 @@ width: 100%;
     .our_logo{
         display: none;
     }
+    #video_speed{
+width: 100%;  
+height: 100%;
+}
      .menu{
         width: 5%;
         height: 5%;
@@ -394,6 +419,21 @@ width: 100%;
     display: flex;
     flex-direction: column;
     margin: 5px;
+}
+.right_side img{
+    
+    width: 100%;
+    height: 40vh;
+    border-radius: 46px;
+
+    
+}
+
+.left_side img{
+    
+    width: 100%;
+    height: 40vh;
+    border-radius: 46px;
 }
 }
 
