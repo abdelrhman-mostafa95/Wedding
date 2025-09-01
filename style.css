@@ -261,6 +261,24 @@ body {
     opacity: 1.5;
 }
 
+.sound-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: var(--color-light-brown);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+   -webkit-tap-highlight-color: transparent; 
+  -webkit-touch-callout: none; 
+  outline: none;
+  border: none;
+}
+
 /* invetation */
 
 .invetation {

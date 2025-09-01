@@ -12,18 +12,15 @@ const elements = document.querySelectorAll('.fade-in');
 
   elements.forEach(el => observer.observe(el));
 
- const video = document.getElementById("video_speed");
-const soundBtn = document.getElementById("soundToggle");
-const soundIcon = document.getElementById("soundIcon");
+const video = document.getElementById("video_speed");
+const soundBtn = document.getElementById("sound-btn");
 
 soundBtn.addEventListener("click", () => {
   if (video.muted) {
     video.muted = false;
-    soundIcon.classList.remove("bi-volume-mute");
-    soundIcon.classList.add("bi-volume-up");
+    soundBtn.textContent = "🔊"; 
   } else {
     video.muted = true;
-    soundIcon.classList.remove("bi-volume-up");
-    soundIcon.classList.add("bi-volume-mute");
+    soundBtn.textContent = "🔇"; 
   }
 });
