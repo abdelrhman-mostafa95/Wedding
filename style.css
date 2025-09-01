@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     background-color: var(--color-off-white);
@@ -108,6 +111,15 @@ body {
 
 
 /* nav bar */
+
+.menu,
+.nav_menu_btn {
+  -webkit-tap-highlight-color: transparent; 
+  -webkit-touch-callout: none; 
+  outline: none;
+  border: none;
+}
+
 
 .menu-toggle {
     display: none;
@@ -449,6 +461,11 @@ body {
 
 
 @media (max-width: 767px) {
+
+
+
+
+
     .nav-links {
         display: none;
         flex-direction: column;
