@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--color-off-white);
 }
 
@@ -30,7 +30,7 @@ body{
     justify-content: space-between;
 }
 
-.justify-around{
+.justify-around {
     justify-content: space-around;
 }
 
@@ -62,8 +62,8 @@ body{
     width: 50%;
 }
 
-.height-50{
-height: 50%;
+.height-50 {
+    height: 50%;
 }
 
 .width-100 {
@@ -73,7 +73,8 @@ height: 50%;
 .gap-50 {
     gap: 50px;
 }
-.gap-20{
+
+.gap-20 {
     gap: 20px;
 }
 
@@ -84,38 +85,40 @@ height: 50%;
 }
 
 .row {
-    margin: 20px ;
+    margin: 20px;
 }
 
 /* animation */
 
 .fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
+
 
 
 /* nav bar */
 
-.navBar{
+.navBar {
     margin-bottom: 20px;
-    
+    margin-top: 30px;
+
 }
 
 .navBar a {
-position: relative;
-  text-decoration: none;
-  color: var(--color-brown);
-  transition: color 0.4s ease-in-out;
+    position: relative;
+    text-decoration: none;
+    color: var(--color-brown);
+    transition: color 0.4s ease-in-out;
 }
 
-.navBar a::after{
+.navBar a::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -128,28 +131,55 @@ position: relative;
 }
 
 .navBar a:hover {
-  color: var(--color-light-brown);
+    color: var(--color-light-brown);
 }
 
 .navBar a:hover::after {
-  width: 100%; 
+    width: 100%;
 }
 
-
-.our_logo {
-    font-family: 'Great Vibes';
-    border: 1px solid var(--color-brown);
-    color: var(--color-brown);
-    padding: 22px 10px;
-    border-radius: 100%;
+.our_logo_wrapper {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.our_logo_media{
+.our_logo_border {
+    width: 70px;
+    height: 70px;
+    border: 5px dotted var(--color-light-brown);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.our_logo_text {
     font-family: 'Great Vibes';
-    border: 1px solid var(--color-brown);
     color: var(--color-brown);
-    padding: 22px 10px;
-    border-radius: 100%;
+    font-size: 18px;
+    position: relative;
+}
+
+.our_logo_wrapper_one {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our_logo_border_two {
+    width: 70px;
+    height: 70px;
+    border: 5px dotted var(--color-light-brown);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.our_logo_text_three {
+    font-family: 'Great Vibes';
+    color: var(--color-brown);
+    font-size: 18px;
+    position: relative;
 }
 
 .shadow_line {
@@ -157,7 +187,7 @@ position: relative;
     height: 1px;
     background: var(--color-gray);
     box-shadow: 0 5px 5px var(--color-light-brown);
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .nav_menu_btn {
@@ -168,32 +198,32 @@ position: relative;
 
 
 
-.header_text{
+.header_text {
     margin: 10px 0;
 }
 
-.header_text span{
-font-family: 'Great Vibes';
+.header_text span {
+    font-family: 'Great Vibes';
 }
 
-.header_text h1{
+.header_text h1 {
     font-family: 'Edu NSW ACT Cursive', cursive;
     font-size: 32px;
     font-weight: 500;
     color: var(--color-brown);
 }
 
-.header_text h5{
+.header_text h5 {
     color: var(--color-light-brown);
     font-family: 'Poppins';
     font-weight: 500;
 }
 
-.hero_video{
-width: 100%;    
+.hero_video {
+    width: 100%;
 }
 
-.hero_video video{
+.hero_video video {
     margin: auto;
     padding: auto;
     width: 70%;
@@ -203,15 +233,15 @@ width: 100%;
 
 /* invetation */
 
-.invetation{
+.invetation {
     border: 1px solid var(--color-light-brown);
     border-radius: 50px;
     gap: 50px;
-    margin:50px 70px;
-    
+    margin: 50px 70px;
+
 }
 
-.left img{
+.left img {
     width: 100%;
     height: auto;
     border-top-left-radius: 50px;
@@ -219,8 +249,8 @@ width: 100%;
     margin-bottom: -3.5px;
 }
 
-.right h4{
-color: var(--color-light-brown);
+.right h4 {
+    color: var(--color-light-brown);
     font-family: 'Poppins';
     font-weight: 500;
     margin-bottom: 20px;
@@ -228,25 +258,25 @@ color: var(--color-light-brown);
 
 
 
-.right h1{
+.right h1 {
     font-family: 'Edu NSW ACT Cursive', cursive;
     font-size: 32px;
     font-weight: 500;
     color: var(--color-brown);
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 
 /* groom and bride */
 
-.groom_section{
+.groom_section {
     margin: 100px;
 }
 
-.groom_img{
-width: 100%;
+.groom_img {
+    width: 100%;
 }
 
-.groom h1{
+.groom h1 {
     font-family: 'Edu NSW ACT Cursive', cursive;
     text-align: center;
     font-size: 64px;
@@ -261,7 +291,7 @@ width: 100%;
     text-align: center;
 }
 
-.left_side h2{
+.left_side h2 {
     font-family: 'Edu NSW ACT Cursive', cursive;
     text-align: center;
     font-size: 32px;
@@ -270,37 +300,38 @@ width: 100%;
     margin-bottom: 10px;
 }
 
-.left_side p{
+.left_side p {
     font-family: 'Poppins', cursive;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
     padding: 20px;
     color: var(--color-brown);
     margin-bottom: 10px;
 }
 
-.left_side img{
-    
+.left_side img {
     width: 100%;
     height: 70vh;
-    border-radius: 46px;
+    border-top-left-radius: 46px;
+    border-top-right-radius: 46px;
 }
 
-.right_side{
+.right_side {
     border: 2px solid var(--color-light-brown);
     border-radius: 50px;
     text-align: center;
 }
 
-.right_side img{
-    
+.right_side img {
+
     width: 100%;
     height: 70vh;
-    border-radius: 46px;
+    border-top-left-radius: 46px;
+    border-top-right-radius: 46px;
 }
 
-.right_side h2{
+.right_side h2 {
     font-family: 'Edu NSW ACT Cursive', cursive;
     text-align: center;
     font-size: 32px;
@@ -309,10 +340,10 @@ width: 100%;
     margin-bottom: 10px;
 }
 
-.right_side p{
+.right_side p {
     font-family: 'Poppins', cursive;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
     color: var(--color-brown);
     margin-bottom: 10px;
@@ -325,116 +356,129 @@ width: 100%;
         justify-content: space-between;
         align-items: center;
     }
+
     .shadow_line {
         display: none;
     }
-    .navBar a{
+
+    .navBar a {
         display: none;
     }
-    .our_logo{
+
+    .our_logo_wrapper {
         display: none;
     }
-     #video_speed{
-width: 100%;  
-height: 100%;
-}
-   
-    .menu{
+
+    #video_speed {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu {
         width: 5%;
         height: 5%;
     }
-    .hero{
+
+    .hero {
         margin-bottom: 100px;
         text-align: center;
     }
-      .invetation{
+
+    .invetation {
         display: block;
         margin: 10px;
     }
-    .left img{
-    width: 100%;
-    height: auto;
-    border-radius: 50px;
-    margin-bottom: 5px;
-}
-.groom_section{
-    margin: 25px;
-}
-.right_side img{
-    
-    width: 100%;
-    height: 40vh;
-    border-radius: 46px;
 
-    
-}
+    .left img {
+        width: 100%;
+        height: auto;
+        border-radius: 50px;
+        margin-bottom: 5px;
+    }
 
-.left_side img{
-    
-    width: 100%;
-    height: 40vh;
-    border-radius: 46px;
-}
+    .groom_section {
+        margin: 25px;
+        
+    }
+
+    .right_side img {
+        width: 100%;
+        height: 70vh;
+        border-radius: 46px;
+    }
+
+    .left_side img {
+        width: 100%;
+        height: 70vh;
+        border-radius: 46px;
+    }
 }
 
 
 @media (max-width: 767px) {
-  .nav_menu_btn {
+    .nav_menu_btn {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .shadow_line {
         display: none;
     }
-    .navBar a{
+
+    .navBar a {
         display: none;
     }
-    .our_logo{
+
+    .our_logo_wrapper {
         display: none;
     }
-    #video_speed{
-width: 100%;  
-height: 100%;
-}
-     .menu{
+
+    #video_speed {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu {
         width: 5%;
         height: 5%;
     }
-    .hero{
+
+    .hero {
         margin-bottom: 100px;
         text-align: center;
     }
-    .invetation{
-        display: block;
+
+    .invetation {
+        display: flex;
+        flex-direction: column;
         margin: 10px;
     }
-    .left img{
-    width: 100%;
-    height: auto;
-    border-radius: 50px;
-    margin-bottom: 5px;
-}
-.groom_section{
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-}
-.right_side img{
-    
-    width: 100%;
-    height: 40vh;
-    border-radius: 46px;
 
-    
-}
+    .left img {
+        width: 100%;
+        height: auto;
+        border-radius: 50px;
+        margin-bottom: 5px;
+    }
 
-.left_side img{
-    
-    width: 100%;
-    height: 40vh;
-    border-radius: 46px;
-}
+    .groom_section {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .right_side img {
+        width: 100%;
+        height: 50vh;
+        border-radius: 46px;
+    }
+
+    .left_side img {
+        width: 100%;
+        height: 50vh;
+        border-radius: 46px;
+    }
 }
 
 :root {
