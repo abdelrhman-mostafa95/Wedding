@@ -15,6 +15,9 @@ elements.forEach(el => observer.observe(el));
 const video = document.getElementById("video_speed");
 const soundBtn = document.getElementById("sound-btn");
 
+video.muted = false;
+soundBtn.textContent = "🔊";
+
 soundBtn.addEventListener("click", () => {
   if (video.muted) {
     video.muted = false;
