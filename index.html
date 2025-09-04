@@ -35,7 +35,7 @@
     <nav class="navBar fade-in">
       <div class="contanier">
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="nav_menu_btn" >
+        <label for="menu-toggle" class="nav_menu_btn">
           <div class="our_logo_wrapper_one">
             <span class="our_logo_border_two"></span>
             <span class="our_logo_text_three">A & N</span>
@@ -71,7 +71,7 @@
       <div class="hero_video">
         <video id="video_speed" src="./images/heading_video.mp4" autoplay muted loop playsinline preload="auto"
           poster></video>
-          <button id="sound-btn" class="sound-btn">🔇</button>
+        <button id="sound-btn" class="sound-btn">🔇</button>
       </div>
     </div>
     <!-- invetation -->
@@ -132,18 +132,38 @@
     </div>
 
   </section>
+  <!-- ! Gallary -->
+  <h2 class="h2_gallary" data-aos="fade-up" data-aos-duration="2000" class="groom" id="groom">Gallery</h2>
+  <section class="gallery" data-aos="fade-up" data-aos-duration="2000" class="groom" id="groom">
+    <div class="contanier">
+      <img src="./images/img1.jpg" alt="Gallery Image">
+      <img src="./images/img2.jpg" alt="Gallery Image">
+      <img src="./images/img3.jpg" alt="Gallery Image">
+      <img src="./images/img5.jpg" alt="Gallery Image">
+      <img src="./images/img7.jpg" alt="Gallery Image">
+      <img src="./images/img8.jpg" alt="Gallery Image">
+      <img src="./images/img10.jpg" alt="Gallery Image">
+      <img src="./images/img11.jpg" alt="Gallery Image">
+    </div>
+  </section>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <img id="popupImg" src="" alt="Expanded Image">
+  </div>
   <!-- ! javascript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script>
     gsap.to(".our_logo_border", {
       rotation: 360,
-      duration: 15,
+      duration: 2,
       repeat: -1,
       ease: "linear"
     });
     gsap.to(".our_logo_border_two", {
       rotation: 360,
-      duration: 15,
+      duration: 2,
       repeat: -1,
       ease: "linear"
     });
